@@ -1,0 +1,104 @@
+
+/* ⋅•⋅⊰∙∘☽ Global stuff(?) ☾∘∙⊱⋅•⋅ */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Times New Roman', Times, serif;
+	-ms-overflow-style: none; 
+	scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+	display: none;
+}
+		/* ---> hidden scrollbar from w3schools */
+
+body{
+	background-color: #ffff;
+}
+
+
+
+/* ⋅•⋅⊰∙∘☽ NAVIGATION BAR ☾∘∙⊱⋅•⋅ */
+nav{
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.874),
+				0 2px 25px #3507ff;
+	padding: 0px 5%;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+
+	justify-content: space-between;
+	align-items: center;
+	overflow-x: scroll;
+	
+	
+	background: 
+	radial-gradient(
+		ellipse at center -150%, 
+		#f9f0c2 0%, 
+		rgba(255, 255, 255, .4) 40%, 
+		rgba(0, 0, 0, .6) 70%
+		),
+	url("navBarBG"); /* https://www.magnific.com/free-vector/abstract-perspective-graph-pattern-grid-vector-design_51706871.htm#fromView=keyword&page=1&position=0&uuid=690a3175-af47-4a4d-8bcb-19f29e5545c8&query=Black+grid+background */ 
+}
+
+.logo{
+	font-size: 24px;
+	font-weight: bold;
+	color: #e9dbff;
+	padding-right: 5%;
+	white-space: nowrap;
+}
+
+nav a{
+	text-decoration: none;
+	text-shadow:0 0 10px #ffffff, 0 0 20px #3507ff;     
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav li a{
+	color: #e9dbff;
+	font-size: 16px;
+	transition: color .3s ease;
+	display: flex;
+	padding: 20px 30px;
+}
+
+nav li a:hover{
+	color: #976bf6;
+	background-color: rgba(0, 0, 0, .7);
+}
+
+li:not(:first-child){
+	border-left: 1px solid white;
+} 
+
+li:not(:first-child):not(:last-child){
+	box-shadow: 0 2px 10px rgba(255, 255, 255, 0.874),
+				0 2px 25px #3507ff;
+	
+}
+
+
+
+/* ⋅•⋅⊰∙∘☽ BACKGROUND ☾∘∙⊱⋅•⋅ */
+.parallax { 
+	background: url("stars-space.gif"); /* https://tenor.com/view/stars-space-blinking-gif-10704576 */
+	height: 300%; 
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: repeat;
+	background-size: cover;
+	mask-image: linear-gradient(to bottom, #ffffff 50%, transparent 100%);
+}
+		/* ---> most of parallax code from w3schools */
+
+
