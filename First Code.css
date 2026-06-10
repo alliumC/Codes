@@ -111,6 +111,7 @@ li:not(:first-child):not(:last-child){
 		url("stars-space.gif");/* https://tenor.com/view/stars-space-blinking-gif-10704576 */
 	mask-image: linear-gradient(to bottom, #ffffff 75%, transparent 100%);
 }
+		/* ---> most of parallax code from w3schools */
 
 .sign{
 	padding: 30px;
