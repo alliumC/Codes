@@ -1,9 +1,11 @@
+window.addEventListener('scroll', () => {
     const sign = document.querySelector('.sign');
+    const box = document.querySelector('.white').getBoundingClientRect();
+    const signR = sign.getBoundingClientRect();
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY >= window.innerHeight * 2) {
+    if (signR.bottom * 1.5 > box.top) {
         sign.classList.add('inverted');
-      } else {
+    } else {
         sign.classList.remove('inverted');
-      }
-    });
+    }
+});
